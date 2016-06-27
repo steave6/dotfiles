@@ -1,5 +1,5 @@
 #! /bin/sh
 
-cd /home/steav/Documents/P/NodeProject/senm/
+cd /home/steav/Documents/P/NodeProject/Crowlman
 
 node ./getnewlist.js
