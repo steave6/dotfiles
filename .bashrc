@@ -48,4 +48,6 @@ function cs () {
 }
 # radio alias
 alias mradio='mplayer -playlist http://yp.shoutcast.com/sbin/tunein-station.m3u?id=5531'
-alias auto='autokey-gtk -l'
+
+# ps aux | grep [xxx]
+alias psg='ps aux | grep'

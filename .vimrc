@@ -55,6 +55,21 @@ au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
 au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 " }}}
 
+"# disable fcitx when vim mode change to normal.{{
+let g:input_toggle = 1
+function! Fcitx2en()
+    let s:input_status = system("fcitx-remote")
+    if s:input_status == 2
+        let g:input_toggle = 1
+        let l:a = system("fcitx-remote -c")
+    endif
+endfunction
+
+set ttimeoutlen=150
+autocmd InsertLeave * call Fcitx2en()
+" }}
+
+
 
 " サーチ関連の設定
 set incsearch
