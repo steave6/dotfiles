@@ -3,3 +3,7 @@ export PATH=$PYENV_ROOT/bin:$PATH
 eval "$(pyenv init -)"
 # export PYTHONDONTWRITEBYTECODE=1
 _byobu_sourced=1 . /usr/bin/byobu-launch 2>/dev/null || true
+
+if [ -e /snap/bin ]; then
+  export PATH=$PATH:/snap/bin
+fi
