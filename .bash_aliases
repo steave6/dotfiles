@@ -29,3 +29,11 @@ alias mradio='mplayer -playlist http://yp.shoutcast.com/sbin/tunein-station.m3u?
 
 # ps aux | grep [xxx]
 alias psg='ps aux | grep'
+
+alias xmod='xmodmap ~/.Xmodmap'
+
+alias ssh='ssh -XC steav-main'
+
+alias remotevm='remote-viewer spice://192.168.0.11:5900 &'
+
+alias wake-main='powerwake 30:85:a9:41:e2:ec'
