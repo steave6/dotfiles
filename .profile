@@ -21,3 +21,5 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 _byobu_sourced=1 . /usr/bin/byobu-launch 2>/dev/null || true
+
+export LC_MESSAGES='en_US.utf8'

@@ -5,22 +5,27 @@ import os
 Random = random.random()
 
 Tasks = {
-    "プログラミング" : 2,
+    "プログラミング他" : 2,
     "応用情報" : 3,
     "法律" : 2,
     "TED, Coursera,掃除他" : 2,
-    "Anki modify" : 1,
+    "Anki modify" : 2,
 }
 
 
 def random_task(arg):
     tasks = makeDictvalueRatio(arg)
-    print tasks.values()
+#    forEachPrint_Dict(tasks)
 
     for key in tasks.keys():
       if tasks[key][1] <= Random < sum(tasks[key]):
-        print key
+        print "\n" + "Task: " + key
         return key
+
+def forEachPrint_Dict(dictionary):
+    for key in dictionary:
+      string = key.decode('utf-8')
+      print string[0:2] + ": " + str(dictionary[key])
 
 
 def makeDictvalueRatio(arg):
