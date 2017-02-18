@@ -1,2 +1,2 @@
-clear lock
-add Lock = Caps_Lock
+remove Lock = Caps_Lock
+keysym Caps_Lock = Escape
